@@ -42,6 +42,8 @@
     "require-dir": "^0.1.0",
     "underscore": "^1.7.0",
     "vinyl-source-stream": "^1.0.0",
-    "watchify": "^2.1.1"    
+    "watchify": "^2.1.1" ,
+    "literalify": "",
+    "node-jsx": ""
   }
 }

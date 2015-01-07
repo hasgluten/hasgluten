@@ -15,6 +15,7 @@ Clone the repo, then:
 
 ```sh
 $ npm install
+$ ln -s ../components/material-ui/src/ node_modules/material-ui
 $ cd components/material-ui
 $ npm install
 ```
