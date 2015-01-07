@@ -1,0 +1,47 @@
+{
+  "name": "HasGluten",
+  "version": "0.0.1",
+  "description": "Has gluten in it?!",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "browser": {
+    "material-ui": "./components/material-ui/src/index.js"
+  },
+  "browserify": {
+    "transform": [
+      ["reactify", {"es6": true}]
+    ]
+  },
+  "dependencies": {
+    "react": "0.12.x",
+    "react-router": "0.11.x",
+    "react-localstorage": "",
+    "react-draggable2": "^0.4.1",
+    "react-tap-event-plugin": ""
+  },
+  "devDependencies": {
+    "assert": "^1.1.1",
+    "karma": "^0.12.16",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-cli": "0.0.4",
+    "karma-firefox-launcher": "^0.1.3",
+    "karma-mocha": "^0.1.4",
+    "karma-webpack": "^1.2.1",
+    "browser-sync": "^1.6.5",
+    "browserify": "^6.3.2",
+    "gulp": "^3.8.10",
+    "gulp-less": "^1.3.6",
+    "gulp-notify": "^2.0.1",
+    "gulp-sourcemaps": "^1.2.8",
+    "gulp-util": "^3.0.1",
+    "pretty-hrtime": "^0.2.2",
+    "reactify": "^0.16.0",
+    "require-dir": "^0.1.0",
+    "underscore": "^1.7.0",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^2.1.1"    
+  }
+}

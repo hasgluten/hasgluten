@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>HasGluten - Quick and Accurate Gluten-Free Foods List</title>
+    <meta name="description" content="HasGluten is the most current and comprehensive list of gluten-free foods available. Find out quickly and easily if it's safe to eat or HasGluten.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="HasGluten - Quick and Accurate Gluten-Free Foods List" />
+    <meta property="og:site_name" content="HasGluten" />
+    <meta property="og:url" content="http://hasgluten.com" />
+    <meta property="og:description" content="HasGluten is the most current and comprehensive gluten-free foods list available. Free information for Celiacs and others living with gluten intolerance, HasGluten quickly tells you whether a food or ingredient can be part of your gluten-free diet." />
+    <meta property="og:image" content="https://pbs.twimg.com/profile_images/534064897093410818/w3d1BAz3_400x400.jpeg" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@hasgluten">
+    <meta name="twitter:title" content="HasGluten - Quick and Accurate Gluten-Free Foods List">
+    <meta name="twitter:description" content="HasGluten is the most current and comprehensive list of gluten-free foods available. Find out quickly and easily if it's safe to eat or HasGluten.">
+    <meta name="twitter:image:src" content="https://pbs.twimg.com/profile_images/534064897093410818/w3d1BAz3_400x400.jpeg">
+    <meta name="keywords" content="celiac, celiac disease diet, gluten free, gluten free diet, gluten free flour, gluten free food, gluten free food list, gluten free snacks, gluten intolerance, what is gluten free">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/main.css">
+    <script>
+      if (window.location.hostname != 'localhost') {
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-56772145-1', 'auto');
+      ga('send', 'pageview'); ga1st = 0;
+      }
+    </script>
+  </head>
+  <body>
+    <div id="universe">&nbsp;&nbsp;&nbsp;</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+    <script src="/main.js"></script>
+    <script>
+        embedly('on', 'card.rendered', function(iframe){
+          if (!iframe.baseURI) {
+              var parent = $('.embedly-card').parent();
+              if (parent.data('lang') == 'en') {
+                  parent.html('<em>'+parent.data('none')+'</em>');
+              } else {
+                  var url = 'http://en.wikipedia.org/wiki/' + parent.data('key'),
+                      a = $('<a class="embedly-card" href="'+url+'"></a>');
+                  parent.data('lang', 'en');
+                  parent.html(a);
+                  embedly('card', '.embedly-card');
+              }
+          }
+          else {
+              if (typeof ga !== 'undefined') ga('send', 'pageview', '/wikipedia/'+$(iframe).parent.data('lang')+'/'+$(iframe).parent.data('src'));
+          }
+        });
+    </script>
+  </body>
+</html>

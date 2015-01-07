@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Example of how to build with browserify
+# You will need to `npm install browserify react-tools --save-dev` first
+
+echo "-> Converting JSX to JS"
+node_modules/.bin/jsx app/ tmp/
+
+echo "-> Building app bundle"
+browserify -t reactify -e tmp/main.js > public/main.js
+
+echo "-> Removing tmp/"
+rm -rf tmp
+
+echo "-> Now run 'npm start', not 'script/dev'"
+
