@@ -3,16 +3,27 @@ HasGluten
 
 Quick and Accurate Gluten-Free Foods List.
 
-Built with React with Google Sheets as the sole backend.
+Built with React and Google Sheets as the sole backend.
 
 Made with ♥ and no gluten.
+
+
+Setup
+-----
+
+Clone the repo, then:
+
+```sh
+$ npm install
+$ cd components/material-ui
+$ npm install
+```
 
 
 Development
 -----------
 
 ```sh
-$ npm install
 $ gulp
 ```
 
@@ -23,7 +34,6 @@ Server-side rendering
 ---------------------
 
 ```sh
-$ npm install
 $ npm start
 $ ./download.sh
 ```
