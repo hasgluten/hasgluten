@@ -45,7 +45,7 @@ var EmptyRow = React.createClass({
             'it': ["Oops! Spiacenti, non ce l'abbiamo ancora.", 'Vuoi aiutarci? Scrivici a'],
             'es': ["", ''],
             'fr': ["Oops! Desolés, on l'a pas encore.", 'Tu veux nous aider? Ecris à'],
-            'de': ["", '']
+            'de': ["Ups! Leider haben wir das noch nicht!", 'Willst du uns helfen? Schreib uns an']
         };
         var lang = this.props.locales[0],
             message = messagesAll[lang] || messagesAll['en'];
@@ -70,7 +70,7 @@ var EmbedWikipedia = React.createClass({
             'it': 'No altre info',
             'es': 'No hay más info',
             'fr': "Pas d'autre info",
-            'de': 'Keine weitere Info'
+            'de': 'Keine weiteren Infos'
             // 'en': 'no info', 
             // 'it': 'no info',
             // 'es': 'no hay info',
@@ -163,8 +163,8 @@ var SearchBar = React.createClass({
                 description: 'Ingrédients pour le moment, plats à bientôt.'
             },
             'de': {
-                placeholder: 'Gibst eine Zutat',
-                legend: ['Gluten-free (glutenfrei)', 'Has gluten (könnte Gluten haben)'],
+                placeholder: 'Gib eine Zutat ein',
+                legend: ['Glutenfrei (glutenfrei)', 'enthält Gluten (oder könnte es enthalten)'],
                 description: ''
             }
         };

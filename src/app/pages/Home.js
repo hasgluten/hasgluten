@@ -48,7 +48,7 @@ var Index = module.exports = React.createClass({
         'Fait avec ♥ et sans gluten.'
       ],
       'de': [
-        'Gebildet mit ♥ und ohne Gluten.'
+        'Mit ♥ gemacht und ohne Gluten.'
       ]
     };
     var lang = this.props.locales[0],
